@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  /* font-family: 'Roboto', sans-serif;
+    font-family: 'Spectral', serif; */
+}
+
+.withColor {
+  transition: background-color 0.5s linear;
+  background: #ffc017;
+  z-index: 3;
+}
+
+.noColor {
+  transition: background-color 0.5s linear;
+  background: white;
+  z-index: 3;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0 20%;
+  height: 8vh;
+  /* background-color: #ffc017; */
+  border-bottom: #191919 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.log img {
+  width: 100%;
+}
+
+.navMenu {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.blackButton {
+  font-size: 0.9rem;
+  background: #191919;
+  padding: 3% 4%;
+  border-radius: 30px;
+}
+
+.blackButton:hover {
+  background: black;
+}
+
+.blackButton a {
+  color: white;
+}
+
+header {
+  background: #ffc017;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  border-bottom: #191919 solid 1px;
+  overflow: hidden;
+}
+
+.headerTitle {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 18%;
+  max-width: 30%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+
+.headerTitle h1 {
+  font-family: "Spectral", serif;
+  font-size: 7rem;
+  font-weight: 400;
+  letter-spacing: -0.7rem;
+  margin: 15% 0 5%;
+}
+
+.headerTitle p {
+  width: 80%;
+  margin: 0 0 10%;
+}
+
+.headerTitle .blackButton {
+  font-size: 1.6rem;
+  padding: 2% 8%;
+  border-radius: 100px;
+}
+
+.headerSvg {
+  height: 100%;
+}
+
+main {
+  padding: 0 18%;
+  border-bottom: rgb(131, 131, 131) 1px solid;
+}
+
+h3 {
+  display: flex;
+  width: 190px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 40px 0 10px;
+  color: black;
+}
+
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.schedule {
+  width: 400px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.scheduleNum {
+  color: #e9e7e6;
+  align-self: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.scheduleContent {
+  font-size: 0.8rem;
+  width: 400px;
+  height: 100px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.scheduleName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.scheduleName .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.scheduleName .circle img {
+  width: 100%;
+}
+
+.scheduleTitle {
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.scheduleDate {
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scheduleDate img {
+  margin-left: 5px;
+  width: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 18% 0;
+}
+
+.articleList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 100px;
+  margin: 0;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 60px 0;
+}
+
+article .circleAuthor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+article .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+article .circle img {
+  width: 100%;
+}
+
+.articleContent {
+  width: 450px;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articleAuthor {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.articleSubTitle {
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+}
+
+.articleDate {
+  color: rgb(117, 117, 117);
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bookMark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.greyButton {
+  background: #e6e6e6;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.leftFlex {
+  align-self: flex-start;
+}
+
+.articleImg {
+  padding: 0;
+  margin: 0;
+}
+
+.articleImg img {
+  width: 200px;
+  aspect-ratio: auto 200 / 134;
+  height: 134px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  font-size: 1rem;
+  position: sticky;
+  top: 90px;
+}
+
+.makeSticky {
+  z-index: 2;
+}
+
+.asideContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 400px;
+  border-bottom: #e6e6e6 1px solid;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.makeSticky h3 {
+  margin: 0 0 20px;
+  padding: 0;
+  width: 300px;
+}
+
+.asideButton {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(117, 117, 117);
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+}
+
+.asideNav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 450px;
+}
+
+.asideLink {
+  padding: 10px;
+}
+
+.asideLink a {
+  color: rgb(131, 131, 131);
+}

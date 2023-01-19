@@ -3,20 +3,6 @@
 body {
   font-family: "Roboto", sans-serif;
   height: 100%;
-  /* font-family: 'Roboto', sans-serif;
-    font-family: 'Spectral', serif; */
-}
-
-.withColor {
-  transition: background-color 0.5s linear;
-  background: #ffc017;
-  z-index: 3;
-}
-
-.noColor {
-  transition: background-color 0.5s linear;
-  background: white;
-  z-index: 3;
 }
 
 nav {
@@ -25,7 +11,6 @@ nav {
   font-size: 1rem;
   padding: 0 20%;
   height: 8vh;
-  /* background-color: #ffc017; */
   border-bottom: #191919 solid 1px;
   display: flex;
   align-items: center;
@@ -33,22 +18,8 @@ nav {
   position: sticky;
   top: 0;
   z-index: 3;
-}
-
-.log img {
-  width: 100%;
-}
-
-.navMenu {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-a {
-  text-decoration: none;
-  color: #191919;
+  background-color: #ffc017;
+  transition: background-color 0.5s;
 }
 
 .blackButton {
@@ -64,6 +35,30 @@ a {
 
 .blackButton a {
   color: white;
+}
+
+.newNav {
+  background-color: white;
+}
+
+.newNav #greenButton {
+  background-color: #1a8917;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navMenu {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: #191919;
 }
 
 header {
@@ -137,7 +132,8 @@ h3 {
 }
 
 .schedule {
-  width: 400px;
+  width: 20vw;
+  min-width: 250px;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -319,7 +315,7 @@ aside {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 400px;
+  width: 20vw;
   border-bottom: #e6e6e6 1px solid;
   padding-bottom: 30px;
   margin-bottom: 30px;
@@ -328,7 +324,7 @@ aside {
 .makeSticky h3 {
   margin: 0 0 20px;
   padding: 0;
-  width: 300px;
+  width: 20vw;
 }
 
 .asideButton {
@@ -345,7 +341,7 @@ aside {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 450px;
+  width: 20vw;
 }
 
 .asideLink {
@@ -354,4 +350,240 @@ aside {
 
 .asideLink a {
   color: rgb(131, 131, 131);
+}
+
+@media screen and (max-width: 1650px) {
+  .headerTitle h1 {
+    font-size: 6rem;
+    margin: 15% 0 3%;
+    min-width: 400px;
+  }
+
+  .container {
+    justify-content: space-evenly;
+    margin: 0 10%;
+  }
+
+  .scheduleNum {
+    font-size: 1.6rem;
+  }
+
+  .scheduleContent {
+    min-width: 250px;
+  }
+
+  .makeSticky h3 {
+    width: 15vw;
+  }
+
+  .articleContent {
+    width: 15vw;
+    min-width: 300px;
+    justify-content: space-between;
+  }
+
+  .articleImg img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .schedule {
+    min-width: 150px;
+  }
+
+  .scheduleNum {
+    font-size: 1;
+    padding-right: 50px;
+  }
+
+  .scheduleContent {
+    min-width: 150px;
+    font-size: 0.7rem;
+  }
+
+  .scheduleTitle {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .aside {
+      position: unset;
+    }
+
+    .makeSticky h3 {
+      width: 400px;
+    }
+
+    .asideContainer {
+      width: 400px;
+    }
+
+    .asideNav {
+      width: 400px;
+      margin-bottom: 50px;
+      position: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  nav {
+    padding: 0 2%;
+  height: 10vh;
+  justify-content: flex-start;
+  }
+
+  .navMenu {
+    width: 20%;
+    padding-left: 10vw;
+  }
+
+  nav .blackButton {
+    padding: 8% 5%;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .headerTitle {
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    max-width: 80%;
+    padding: 0;
+  }
+
+  .headerTitle h1 {
+    font-size: 3rem;
+    max-width: 80%;
+    margin: 15% 0 5%;
+    letter-spacing: 0rem;
+  }
+
+  .headerTitle p {
+    max-width: 80%;
+    align-self: center;
+  }
+
+  .headerTitle .blackButton {
+    padding: 5%;
+    text-align: center;
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  .trending {
+    flex-direction: column;
+  }
+
+  .schedule {
+    width: 400px;
+  }
+
+  .scheduleNum {
+    font-size: 2;
+    padding-right: 20px;
+  }
+
+  .scheduleContent {
+    width: 200px;
+    font-size: 0.8rem;
+  }
+
+  .scheduleTitle {
+    font-size: 1rem;
+  }
+
+  .makeSticky h3 {
+    width: 250px;
+  }
+
+  .asideContainer {
+    width: 250px;
+  }
+
+  .asideNav {
+    width: 250px;
+    margin-bottom: 50px;
+    position: unset;
+  }
+
+  .articleList {    
+  justify-content: center;
+  align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  article {
+  margin: 0 10px 10px 0;
+  font-size: 0.8rem;
+  width: 80px;
+  }
+
+  .articleSubTitle {
+    font-size: 0.7rem;
+  }
+
+  h4 {
+  font-size: 0.8rem;
+  }
+
+  .articleContent {
+    width: 100px;
+  }
+
+  .articleImg img {
+    width: 100px;
+    height: 75px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .bookMark {
+    width: 200px;
+  }
+
+  .schedule {
+    width: 250px;
+  }
+
+  article {
+    width: 60px;
+  }
+
+  h4 {
+    font-size: 0.7rem;
+  }
+
+  .articleAuthor {
+    font-size: 0.6rem;
+  }
+
+  .articleSubTitle {
+    font-size: 0.6rem;
+    max-width: 120px;
+  }
+
+  .articleImg img {
+    width: 75px;
+    height: 60px;
+    margin-right: 10px;
+  }
 }
